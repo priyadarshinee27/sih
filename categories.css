@@ -1,0 +1,170 @@
+
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --green-color:rgb(41, 168, 5);
+    --light-green-color:#c0eb7b;
+    --orange-color:orange;
+    --light-orange-color:#e67300;
+    --text-color:#090c0e;
+    --bg-color:#fff;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+    
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    left: 0;
+    height: 120px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    background: #E7D37F;
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding: 20px 100px;
+    transition: 0.5s;   
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+
+.profile img{
+    width:40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.profile span{
+    font-size: 20px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-weight: 60;
+    color: var(--text-color);
+    column-gap: 0.5rem;
+}
+
+.logo .bx {
+    font-size: 40px;
+    color: black;
+}
+
+.navbar{
+
+    transform: translateX(20px);
+    display: flex;
+    column-gap: 30px;
+}
+
+.navbar a{
+    font-size: 21px;
+    font-weight: 50;
+    color: var(--text-color);
+    height: none;
+    width: none;  
+}
+
+.navbar a:hover {
+    color:var(--green-color);
+    transition:0.3s;
+}
+
+#menu-icons{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+section{
+    padding: 150px 0 0 0;
+    text-align: center;
+    font-size: 15px;
+    color:#1a2428;
+    
+}
+ 
+.cat{
+    font-weight:bold;
+    font-size: 29px;
+}
+
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 3rem;
+    
+
+}
+
+.categories-container:hover{
+    cursor: pointer;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5{
+    transition: transform 0.5s ease;
+}
+
+
+.box1 img{
+    height: 260px;
+    margin-left: 5px;
+
+}
+.box2 img,
+.box3 img,
+.box4 img
+{
+    height: 260px;
+}
+.box5 img{
+    height: 260px;
+    margin-right: 25px;
+}
+
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover
+{
+    transform:scale(1.3);
+    z-index: 2;
+    
+}

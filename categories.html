@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Categories</title>
+    <link rel="stylesheet " href="categories.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        
+</head>
+<body>
+    <!---navbar--->
+    <header>
+        <a href="#" class="logo"> <i class='bx bxs-cart'></i>Cart</a>
+
+        <!--menu-->
+        <div class="menu" id="menu-icons"></div>
+
+        <!--navlist-->
+        <ul class="navbar">
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#categories" >Market Calender</a></li>
+            <li><a href="#produce">market price</a></li>
+            <li><a href="#about" >Track order</a></li>
+        </ul>
+
+        <!--profile-->
+        <div class="profile">
+            <img src="pics/profile.jpg" alt="">
+            <span> Praveena </span>
+        </div>
+    </header>
+
+    <!--categories-->
+    <section class="categories" id="categories">
+        <span ><h1 class="cat">Categories</h1></span>
+        <!--container content-->
+        <div class="categories-container">
+
+            <!--box 1-->
+            <div class="box1">
+                <img src="pics/fruitt.jpg" alt="fruits" id="fruit-link" >
+                <h2>Fruits</h2>
+                <span>22 Items <br> <i class='bx bxs-right-arrow-circle'></i></span>
+                
+            </div>
+
+             <!--box 2-->
+             <div class="box2">
+                <img src="pics/veg.avif" alt="Vegetables" id="veg-link">
+                <h2>Vegetables</h2>
+                <span>22 Items <br> <i class='bx bxs-right-arrow-circle'></i></span>
+            </div>
+
+             <!--box 3-->
+             <div class="box5">
+                <img src="pics/cereals.jpg" alt="cereal" id="cereal-link">
+                <h2>cereal</h2>
+                <span>22 Items <br> <i class='bx bxs-right-arrow-circle'></i></span>
+            </div>
+
+
+             <!--box 4-->
+             <div class="box4">
+                <img src="https://5.imimg.com/data5/HI/GC/MY-35426765/mix-dry-fruits-500x500.jpg" alt="Dry-fruits" id="dry-fruit-link">
+                <h2>Dry-fruit</h2>
+                <span>22 Items <br> <i class='bx bxs-right-arrow-circle'></i></span>
+            </div>
+
+             <!--box 5-->
+             <div class="box3">
+                <img src="pics/pulses1.jpg" alt="Pulses" id="pulses-link">
+                <h2>Pulses</h2>
+                <span>22 Items <br> <i class='bx bxs-right-arrow-circle'></i></span>
+            </div>
+
+            
+
+            
+
+            <!--script to fruits page-->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const fruit = document.getElementById('fruit-link');
+                fruit.addEventListener('click' , function() {
+                    window.location.href = 'fruits.html';
+                })
+                });
+                
+            </script>
+
+             <!--script to veg page-->
+             <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const fruit = document.getElementById('veg-link');
+                fruit.addEventListener('click' , function() {
+                    window.location.href = 'veg.html';
+                })
+                });
+                
+            </script>
+
+             <!--script to cereal page-->
+             <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const fruit = document.getElementById('cereal-link');
+                fruit.addEventListener('click' , function() {
+                    window.location.href = 'cereal.html';
+                })
+                });
+                
+            </script>
+
+            <!--script to dry-fruit page-->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const fruit = document.getElementById('dry-fruit-link');
+                fruit.addEventListener('click' , function() {
+                    window.location.href = 'dry-fruit.html';
+                })
+                });
+                
+            </script>
+
+            <!--script to pulses page-->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                const fruit = document.getElementById('pulses-link');
+                fruit.addEventListener('click' , function() {
+                    window.location.href = 'pulses.html';
+                })
+                });
+                
+            </script>
+            
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fruits</title>
+    <link rel="stylesheet" href="fruits.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+</head>
+
+<header>
+    <i class='bx bxs-cart'></i> 
+    <a href="#" class="cart" style="position: relative; left: -300px;">cart </a>
+<!--Script for the search engine-->
+<form>
+    <div class="search-box">
+        <span class="icon"><i class='bx bx-search-alt-2'></i></span>
+        <input class="search-input" type="search" placeholder="Search ">
+   </div>
+   <form>
+   <script src="searchbox.js">
+
+   </script>
+   <!--search engine ends here -->
+
+</header>
+
+<body>
+
+    <!--fruit products-->
+    <div class="product-container">
+
+        <!--box 1-->
+        <div class="box1">
+            <img src="pics/apple.avif" >
+            <span>Apple</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+            
+            
+            <i class='bx bx-heart'></i>
+            
+        </div>
+
+        <!--box 2-->
+        <div class="box2">
+            <img src="pics/bananna.avif" >
+            <span>Bananna</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+           
+           
+            <i class='bx bx-heart'></i>
+            
+        </div>
+
+        <!--box 3-->
+        <div class="box3">
+            <img src="pics/grapes.jpg" >
+            <span>Grapes</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+            
+            
+            <i class='bx bx-heart'></i>
+        
+        </div>
+
+        <!--box 4-->
+        <div class="box4">
+            <img src="pics/guava.avif" >
+            <span>Guava</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+           
+            
+            <i class='bx bx-heart'></i>
+            
+        </div>
+
+        <!--box 5-->
+        <div class="box5">
+            <img src="pics/kiwi.jpg" >
+            <span>Kiwi</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+            
+            
+            <i class='bx bx-heart'></i>
+            
+        </div>
+
+        <!--box 6-->
+        <div class="box6">
+            <img src="pics/lemon.avif" >
+            <span>Lemon</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+            
+            
+            <i class='bx bx-heart'></i>
+            
+        </div>
+
+        <!--box 7-->
+        <div class="box7">
+            <img src="pics/orange.avif" >
+            <span>Orange</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+            
+            
+            <i class='bx bx-heart'></i>
+           
+        </div>
+
+        <!--box 8-->
+        <div class="box8">
+            <img src="pics/papaya.jpg" >
+            <span>Papaya</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+            
+         
+            <i class='bx bx-heart'></i>
+            
+        </div>
+
+        <!--box 9-->
+        <div class="box9">
+            <img src="pics/watermelon.avif" >
+            <span>Bananna</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+            
+            <i class='bx bx-heart'></i>
+           
+        </div>
+
+        <!--box 10-->
+        <div class="box9">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8PRYtJnYI_Shp47vmDCUkHbFtRmxPcAe8MA&s" >
+            <span>Mango</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+            
+          
+            <i class='bx bx-heart'></i>
+           
+        </div>
+
+        <!--box 10-->
+        <div class="box9">
+            <img src="https://img.freepik.com/premium-photo/durian-fruit-with-cut-half-leaves-isolated-white-surface_252965-916.jpg" >
+            <span>Durian</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+          
+            
+            <i class='bx bx-heart'></i>
+           
+        </div>
+
+        <!--box 10-->
+        <div class="box9">
+            <img src="https://media.istockphoto.com/id/529663136/photo/pomegranate-fruit-with-green-leaves.jpg?s=612x612&w=0&k=20&c=Rh-aacbrvS3J-K8-1nchCsKsRTeWKZIIZohdBzpGnl8=" >
+            <span>Pomogranete</span>
+            <button class="fruit-button buy-now-button" id="apple">Buy Now</button>
+           
+          
+            <i class='bx bx-heart'></i>
+           
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const buyNowButton = document.getElementById("apple");
+                if (buyNowButton) {
+                    buyNowButton.onclick = function() {
+                        window.location.href = "veg.html"; // 
+                    };
+                } else {
+                    console.error("Buy Now button not found.");
+                }
+            });
+        </script>
+
+<script>
+    // JavaScript to handle the button clicks
+    document.addEventListener("DOMContentLoaded", function() {
+        const buyNowButtons = document.querySelectorAll(".buy-now-button");
+        buyNowButtons.forEach(function(button) {
+            button.onclick = function() {
+                window.location.href = "veg.html";  // Redirect to veg.html
+            };
+        });
+    });
+</script>
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
